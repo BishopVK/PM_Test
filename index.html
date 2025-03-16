@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortys - Consulta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pocket Mortys</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar Morty..." onkeyup="filterMortys()">
+        <button id="clearSearch" onclick="clearSearch()">❌</button>
+    </div>
+    <table id="mortyTable">
+        <thead>
+            <tr>
+                <th style="color: black; text-align: center; font-weight: bold;">Id</th>
+                <th style="color: black; text-align: center; font-weight: bold;">Imagen</th>
+                <th style="color: black; text-align: center; font-weight: bold;">Nombre</th>
+                <th style="color: black; text-align: center; font-weight: bold;">Tipo</th>
+                <th style="color: black; text-align: center; font-weight: bold;">Rareza</th>
+                <th style="color: black; text-align: center; font-weight: bold;">Evoluciona</th>
+                <!-- <th>Exp. Base</th>
+                <th>HP Base</th>
+                <th>ATK Base</th>
+                <th>DEF Base</th>
+                <th>SPD Base</th>
+                <th>Total</th> -->
+            </tr>
+        </thead>
+        <tbody id="mortyList">
+            <!-- Aquí se llenarán los datos con JavaScript -->
+        </tbody>
+    </table>
+    <button id="backToTop" onclick="scrollToTop()">⬆</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
