@@ -52,11 +52,13 @@ function getRarityColor(rarity) {
 function getTypeImage(type) {
     switch (type) {
         case "<span class=\"rock\">Piedra</span>":
-            return "<img src=\"images/rock_large.png\">"; // Verde
+            return "<img src=\"images/rock_large.png\">"; // Piedra
         case "<span class=\"paper\">Papel</span>":
-            return "<img src=\"images/paper_large.png\">"; // Naranja
+            return "<img src=\"images/paper_large.png\">"; // Papel
+        case "<span class=\"scissors\">Tijera</span>":
+            return "<img src=\"images/scissors_large.png\">"; // Tijera
         default:
-            return "<img src=\"images/scissors_large.png\">"; // Sin color para "Common" u otros valores
+            return ""; // Vacío
     }
 }
 
