@@ -39,6 +39,10 @@ img {
     height: 20px;
 }
 
+#mortyTable {
+    width: 100%;
+}
+
 /* Botón flotante de volver arriba */
 #backToTop {
     position: fixed;
