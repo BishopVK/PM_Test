@@ -73,8 +73,8 @@ function displayMortys(mortys) {
         // Crear celdas con el contenido de cada Morty
         row.innerHTML = `
             <td style="color: black; text-align: center; font-weight: bold;">${morty.id}</td>
-            <td style="color: black; text-align: center; font-weight: bold;">${morty.image}</td>
-            <td style="color: black; text-align: center; font-weight: bold;">${morty.name}</td>
+            <td style="color: black; text-align: center; font-weight: bold; width: 20px; height: 20px;">${morty.image}</td>
+            <td style="color: black; text-align: center; font-weight: bold; width: auto">${morty.name}</td>
             <td style="color: black; text-align: center; font-weight: bold;">${typeImage}</td>
             <td style="color: black; text-align: center; font-weight: bold; background-color: ${rarityColor};">${morty.rarity}</td>
             <td style="background-color: ${morty.evo_req_campaign === 2 ? 'green' : 'red'}; color: black; text-align: center; font-weight: bold">
