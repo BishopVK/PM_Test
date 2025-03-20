@@ -9,10 +9,7 @@
 </head>
 <body>
 	<h1 onclick="reload()">Pocket Mortys</h1>
-	<div class="search-container">
-		<input type="text" id="searchInput" placeholder="Buscar Morty..." onkeyup="filterMortys()">
-		<button id="clearSearch" onclick="clearSearch()">❌</button>
-	</div>
+
 	<!-- FILTERS -->
 	<div class="filter-container">
 		<!-- <h3>Filtrar por:</h3> -->
@@ -47,6 +44,12 @@
 		</div>
 	
 		<button onclick="resetFilters()">Restablecer</button>
+	</div>
+
+	<!-- SEARCH -->
+	<div class="search-container">
+		<input type="text" id="searchInput" placeholder="Buscar Morty..." onkeyup="filterMortys()">
+		<button id="clearSearch" onclick="clearSearch()">❌</button>
 	</div>
 
 	<table id="mortyTable">
