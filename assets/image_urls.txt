@@ -372,7 +372,7 @@ https://pocketmortys.net/media/com_pocketmortys/assets/MortyLibertyIcon.png
 https://pocketmortys.net/media/com_pocketmortys/assets/MortyChildOfGaiaIcon.png
 https://pocketmortys.net/media/com_pocketmortys/assets/MortyBacktothePastIcon.png
 https://pocketmortys.net/media/com_pocketmortys/assets/MortySuperNovaIcon.png
-https://pocketmortys.net/media/com_pocketmortys/assets/MortyBirdpersonIcon.png
+https://pocketmortys.net/media/com_pocketmortys/assets/MortyBirdPersonIcon.png
 https://pocketmortys.net/media/com_pocketmortys/assets/MortyStoneAgeIcon.png
 https://pocketmortys.net/media/com_pocketmortys/assets/MortyBronzeAgeIcon.png
 https://pocketmortys.net/media/com_pocketmortys/assets/MortyIronAgeIcon.png
