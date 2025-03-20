@@ -8,7 +8,7 @@
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-	<h1>Pocket Mortys</h1>
+	<h1 onclick="reload()">Pocket Mortys</h1>
 	<div class="search-container">
 		<input type="text" id="searchInput" placeholder="Buscar Morty..." onkeyup="filterMortys()">
 		<button id="clearSearch" onclick="clearSearch()">❌</button>
@@ -24,6 +24,7 @@
 					<label><input type="checkbox" class="filter-type" value="Piedra"> Piedra</label>
 					<label><input type="checkbox" class="filter-type" value="Papel"> Papel</label>
 					<label><input type="checkbox" class="filter-type" value="Tijera"> Tijera</label>
+					<label><input type="checkbox" class="filter-type" value=""> Sin Tipo</label>
 				</div>
 			</div>
 	
@@ -54,7 +55,7 @@
 				<th onclick="sortTable(0)" style="color: black; text-align: center; font-weight: bold;">Id ⬆⬇</th>
 				<th style="color: black; text-align: center; font-weight: bold;">Imagen</th>
 				<th onclick="sortTable(2)" style="color: black; text-align: center; font-weight: bold;">Nombre ⬆⬇</th>
-				<th style="color: black; text-align: center; font-weight: bold;">Tipo</th>
+				<th onclick="sortTable(3)" style="color: black; text-align: center; font-weight: bold;">Tipo ⬆⬇</th>
 				<th onclick="sortTable(4)" style="color: black; text-align: center; font-weight: bold;">Rareza ⬆⬇</th>
 				<th onclick="sortTable(5)" style="color: black; text-align: center; font-weight: bold;">Evol. ⬆⬇</th>
 				<!-- <th>Exp. Base</th>

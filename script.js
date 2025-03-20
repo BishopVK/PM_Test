@@ -115,12 +115,12 @@ function getRarityColor(rarity) {
 // Función para obtener la imagen del tipo
 function getTypeImage(type) {
 	switch (type) {
-		case "<span class=\"rock\">Piedra</span>":
-			return "<img src=\"images/rock_large.png\">"; // Piedra
-		case "<span class=\"paper\">Papel</span>":
-			return "<img src=\"images/paper_large.png\">"; // Papel
-		case "<span class=\"scissors\">Tijera</span>":
-			return "<img src=\"images/scissors_large.png\">"; // Tijera
+		case "Piedra":
+			return "<img src=\"images/rock_large.png\"><p hidden>Piedra</p>"; // Piedra
+		case "Papel":
+			return "<img src=\"images/paper_large.png\"><p hidden>Papel</p>"; // Papel
+		case "Tijera":
+			return "<img src=\"images/scissors_large.png\"><p hidden>Tijera</p>"; // Tijera
 		default:
 			return ""; // Vacío
 	}
@@ -187,4 +187,9 @@ function scrollToTop() {
 function clearSearch() {
 	document.getElementById("searchInput").value = "";
 	filterMortys(); // Restablece la tabla
+}
+
+// Reload page
+function reload() {
+	window.location.reload();
 }
