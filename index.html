@@ -13,6 +13,41 @@
 		<input type="text" id="searchInput" placeholder="Buscar Morty..." onkeyup="filterMortys()">
 		<button id="clearSearch" onclick="clearSearch()">❌</button>
 	</div>
+	<!-- FILTERS -->
+	<div class="filter-container">
+		<!-- <h3>Filtrar por:</h3> -->
+	
+		<div class="filter-group-container">
+			<div class="filter-group">
+				<h4>Tipo</h4>
+				<div class="check-container">
+					<label><input type="checkbox" class="filter-type" value="Piedra"> Piedra</label>
+					<label><input type="checkbox" class="filter-type" value="Papel"> Papel</label>
+					<label><input type="checkbox" class="filter-type" value="Tijera"> Tijera</label>
+				</div>
+			</div>
+	
+			<div class="filter-group">
+				<h4>Rareza</h4>
+				<div class="check-container">
+					<label><input type="checkbox" class="filter-rarity" value="Raro"> Raro</label>
+					<label><input type="checkbox" class="filter-rarity" value="Épico"> Épico</label>
+					<label><input type="checkbox" class="filter-rarity" value="Exótico"> Exótico</label>
+				</div>
+			</div>
+	
+			<div class="filter-group">
+				<h4>Evolución</h4>
+				<div class="check-container">
+					<label><input type="checkbox" class="filter-evo" value="SI"> Sí</label>
+					<label><input type="checkbox" class="filter-evo" value="NO"> No</label>
+				</div>
+			</div>
+		</div>
+	
+		<button onclick="resetFilters()">Restablecer</button>
+	</div>
+
 	<table id="mortyTable">
 		<thead>
 			<tr>

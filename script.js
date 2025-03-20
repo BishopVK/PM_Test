@@ -34,6 +34,7 @@ fetch('mortys.json')
     });
 } */
 
+// SORT Mortys
 let sortDirections = {}; // Objeto para almacenar la dirección de ordenación de cada columna
 
 function sortTable(columnIndex) {
@@ -63,6 +64,38 @@ function sortTable(columnIndex) {
 	// Limpiar y reinsertar las filas ordenadas
 	tbody.innerHTML = "";
 	rows.forEach(row => tbody.appendChild(row));
+}
+
+// FILTER Mortys
+function applyFilters() {
+    const selectedTypes = Array.from(document.querySelectorAll(".filter-type:checked")).map(cb => cb.value);
+    const selectedRarities = Array.from(document.querySelectorAll(".filter-rarity:checked")).map(cb => cb.value);
+    const selectedEvos = Array.from(document.querySelectorAll(".filter-evo:checked")).map(cb => cb.value);
+
+    const rows = document.querySelectorAll("#mortyList tr");
+
+    rows.forEach(row => {
+        const type = row.cells[3].textContent.trim();
+        const rarity = row.cells[4].textContent.trim();
+        const evo = row.cells[5].textContent.trim();
+
+        const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(type);
+        const rarityMatch = selectedRarities.length === 0 || selectedRarities.includes(rarity);
+        const evoMatch = selectedEvos.length === 0 || selectedEvos.includes(evo);
+
+        row.style.display = (typeMatch && rarityMatch && evoMatch) ? "" : "none";
+    });
+}
+
+// Aplicar filtros cuando se cambie un checkbox
+document.querySelectorAll(".filter-type, .filter-rarity, .filter-evo").forEach(cb => {
+    cb.addEventListener("change", applyFilters);
+});
+
+// Función para restablecer filtros
+function resetFilters() {
+    document.querySelectorAll(".filter-type, .filter-rarity, .filter-evo").forEach(cb => cb.checked = false);
+    applyFilters();
 }
 
 // Función para obtener el color de fondo según la rareza

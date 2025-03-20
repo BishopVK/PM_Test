@@ -73,7 +73,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 10px; /* Espacio entre el input y el botón */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 #searchInput {
@@ -97,4 +97,61 @@ img {
 #clearSearch:hover {
     background: darkred;
     color: white;
+}
+
+/* FILTERS */
+.filter-container {
+    text-align: center;  /* Centra el título y el botón */
+    margin: 0px auto;
+    max-width: 800px;
+}
+
+/* .filter-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+} */
+
+.filter-group-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Aumenta la separación entre Tipo, Rareza y Evolución */
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro de cada grupo */
+}
+
+.filter-group h4 {
+    margin-bottom: 10px;
+}
+
+.check-container {
+    display: flex;
+    flex-direction: row;  /* Los checkboxes estarán en columnas */
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+.check-container label {
+    display: flex;
+    flex-direction: column; /* Apila el texto sobre el checkbox */
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
