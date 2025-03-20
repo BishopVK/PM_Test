@@ -20,6 +20,10 @@ table {
     margin-top: 20px;
 }
 
+th {
+    cursor: pointer;
+}
+
 th, td {
     padding: 8px 12px;
     text-align: left;
