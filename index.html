@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortys - Consulta</title>
+    <title>All Mortys in Pocket Mortys</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
     <h1>Pocket Mortys</h1>
@@ -15,12 +16,12 @@
     <table id="mortyTable">
         <thead>
             <tr>
-                <th style="color: black; text-align: center; font-weight: bold;">Id</th>
+                <th onclick="sortTable(0)" style="color: black; text-align: center; font-weight: bold;">Id ⬆⬇</th>
                 <th style="color: black; text-align: center; font-weight: bold;">Imagen</th>
-                <th style="color: black; text-align: center; font-weight: bold;">Nombre</th>
-                <th style="color: black; text-align: center; font-weight: bold;">Tipo</th>
-                <th style="color: black; text-align: center; font-weight: bold;">Rareza</th>
-                <th style="color: black; text-align: center; font-weight: bold;">Evol.</th>
+                <th onclick="sortTable(2)" style="color: black; text-align: center; font-weight: bold;">Nombre ⬆⬇</th>
+                <th onclick="sortTable(3)" style="color: black; text-align: center; font-weight: bold;">Tipo ⬆⬇</th>
+                <th onclick="sortTable(4)" style="color: black; text-align: center; font-weight: bold;">Rareza ⬆⬇</th>
+                <th onclick="sortTable(5)" style="color: black; text-align: center; font-weight: bold;">Evol. ⬆⬇</th>
                 <!-- <th>Exp. Base</th>
                 <th>HP Base</th>
                 <th>ATK Base</th>
